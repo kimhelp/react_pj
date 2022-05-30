@@ -54,11 +54,8 @@ const DefaultLayout = ({ children }) => {
 
     return (
         <>      
-
             <Col>
                 <Menu theme='#FFFFFF' mode="horizontal" style={{ display : 'flex', justifyContent:"center", border:'1px solid lightgray',position:'fixed',zIndex:'10',width:'100%'}}>
-
-                    <Row>
                         <Menu.Item icon ={<InstagramOutlined />}><Link href="/">Home</Link></Menu.Item>
                         {isCookie ? <Menu.Item icon ={<InfoCircleOutlined />}><Link href="/user/login">로그아웃/프로필수정</Link></Menu.Item>
                                   : <Menu.Item icon ={<InfoCircleOutlined/>}><Link href="/user/login">로그인</Link></Menu.Item>
@@ -66,19 +63,13 @@ const DefaultLayout = ({ children }) => {
                         {isCookie ? <></>
                                   : <Menu.Item icon ={<UsergroupAddOutlined />}><Link href="/user/register">회원가입</Link></Menu.Item>
                         }
-                        
                         <Menu.Item onClick={homepage} icon ={<ShopOutlined />}>미니홈피</Menu.Item>
                         <Menu.Item icon={<PlusOutlined />}><Link href="/feed/write">피드작성</Link></Menu.Item>
                         <Menu.Item icon={<DollarCircleOutlined />}><Link href="/market/marketApp">NFT MARKET</Link></Menu.Item>
                         <Menu.Item icon={<GithubOutlined />}><Link href="https://github.com/taechanlim/React_project">Github</Link></Menu.Item>
-                        <Menu.Item icon={<LoadingOutlined />}>페이지 동작중!</Menu.Item>
-                    </Row>
-
+                        <Menu.Item icon={<LoadingOutlined />}>페이지 동작중!</Menu.Item> 
                 </Menu>
             </Col>
-
-
-
             <div>
                 {children}
             </div>

@@ -96,7 +96,7 @@ const MyAnimal: FC<MyAnimalProps> = ({ account }) => {
 
       <div style={{}}>
         <div style={{position:'absolute'}}>
-        <img src="../../static/market.jpg" style={{position:'relative',width:'100%',height:'3000px',zIndex:"0"}}></img>
+        <img src="../../static/market.jpg" style={{position:'relative',width:'100%',height:'6000px',zIndex:"0"}}></img>
         </div>
         <div style={{zIndex:'3',position:'relative',paddingTop:'20px'}}>
         {animalCardArray &&

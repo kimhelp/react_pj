@@ -76,7 +76,7 @@ const Write = () => {
                     />
                 </Space>
                 <input type="file" onChange={onChange} style={{marginLeft:'30%',display:'block',marginTop:'20px',marginBottom:'50px'}}/>
-                <input type='submit' value='작성' style={{background:'#FFFFFF', border:'1.5px solid lightgray',width:'200px',height:'32px',marginLeft:'30%',marginBottom:'20px'}}></input>
+                <input type='submit' value='작성' style={{fontSize:'20px',fontWeight:'bold',background:'#FFFFFF', border:'1.5px solid lightgray',width:'200px',height:'32px',marginLeft:'30%',marginBottom:'20px'}}></input>
             </form>
 
         </div>
